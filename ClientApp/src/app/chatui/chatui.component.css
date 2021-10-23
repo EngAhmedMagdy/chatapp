@@ -1,0 +1,40 @@
+table {
+    width: 100%;
+  }
+
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+ 
+  .flex-item {
+    height: 500px;
+    margin: 3px;
+  }
+  .flex-chat {
+    height: 500px;
+    margin: 5px;
+  }
+  
+    .flex-item ul {
+      list-style: none;
+    }
+ 
+    .flex-item li {
+      background-color: black;
+      color: white;
+      margin: 3px;
+      padding:3px;
+    }
+    .flex-chat li {
+      background-color: white;
+      color: blue;
+      margin: 3px;
+      padding:3px;
+    }

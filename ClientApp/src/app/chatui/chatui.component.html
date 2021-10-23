@@ -1,0 +1,40 @@
+
+
+<body>
+  <nav>
+    <a class="button" routerLink="/room" (click)="createRoom()">create room</a> |
+  </nav>
+<div class="flex-container">
+  <label> user info : {{this.id}} {{this.name}}</label>
+
+  
+ 
+  <div class="flex-item">
+    <label> Current Active Users :</label>
+    <select>
+      <option *ngFor="let user of Users">{{user.name}}</option>
+    </select>
+   
+    
+  </div>
+
+
+<div  class="flex-chat">
+  <ul >
+    <li *ngFor="let msg of Messages">{{msg}}</li>
+
+  </ul>
+</div>
+<div>
+  <input [(ngModel)]="msg" type="text" >
+  <button (click)="sendMsg()" type="button" class="btn btn-primary" >Send</button>
+</div>
+<div class="flex-item">
+  <ul >
+    <li *ngFor="let anno of Announcement">{{anno}}</li>
+
+  </ul>
+</div>
+
+</div>
+</body>
